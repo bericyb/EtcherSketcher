@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Etcher-Sketcher</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id=title>Etcher-Sketcher</h1>
+            <div class="frame"></div>
+            
+            <div class="buttonHolder">
+                <label style="color:beige; font-family: 'Nova Script', cursive;"for="Resolution">Resolution: </label>
+                <select style="background-color:beige; font-family: 'Nova Script', cursive;" onchange=changeRes(this.value) name="Resolution" id="cars">
+                    <option value=32 disable selected hidden>32x32</option>
+                    <option value=8>8x8</option>
+                    <option value=16>16x16</option>
+                    <option value=32>32x32</option>
+                    <option value=64>64x64</option>
+                    <option value=128>128x128</option>
+                    <option value=256>256x256</option>
+                  </select>
+                <button type="button" class="button" onclick="clearGrid()">Clear Drawing</button>
+            </div>
+
+            
+        <script src="script.js"></script>
+    </body>
+</html>
